@@ -1,0 +1,55 @@
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.header-image-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: -100;
+}
+.header-image {
+  width: 100%;
+}
+.header-content {
+  z-index: 90;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-title {
+  font-size: 120px;
+  font-weight: bold;
+}
+.header-subtitle {
+  font-size: 45px;
+  font-weight: bold;
+}
+.header-social {
+  display: flex;
+  margin-top: 100px;
+}
+// .header-social-icon {
+// }
+// .header-social-icon-twitter {
+// }
+// .header-social-icon-github {
+// }
+// .header-social-icon-youtube {
+// }
+// .header-social-icon-behance {
+// }
+// .header-social-icon-discord {
+// }
+.header-fade {
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  width: 100%;
+}

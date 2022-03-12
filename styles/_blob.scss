@@ -1,0 +1,26 @@
+.blob-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 20px;
+  min-height: 100px;
+  min-width: 130px;
+}
+.blob-button .blob {
+  position: absolute;
+  z-index: 5;
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
+}
+.blob-button .blob-icon {
+  position: relative;
+  z-index: 10;
+  transition: all 0.1s ease-in-out;
+}
+.blob-button:hover .blob {
+  transform: scale(1.6) !important;
+}
+.blob-button:hover .blob-icon {
+  transform: scale(0.9) !important;
+}

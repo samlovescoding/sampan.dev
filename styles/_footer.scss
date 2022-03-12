@@ -1,0 +1,41 @@
+.footer {
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+.footer-contacts {
+  margin-bottom: 200px;
+}
+.section-title {
+  margin-bottom: 80px;
+}
+.contact {
+  .contact-type {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .contact-information {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &.contact-left {
+    text-align: left;
+  }
+  &.contact-right {
+    text-align: right;
+  }
+}
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}

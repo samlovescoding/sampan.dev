@@ -1,0 +1,59 @@
+.review {
+  display: flex;
+  margin-top: -150px;
+  align-items: flex-start;
+}
+
+.review-image-wrapper {
+  width: 50%;
+}
+
+.review-image {
+  width: 100%;
+}
+
+.review-information-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 45px;
+  margin-top: 200px;
+  height: 100%;
+}
+
+.review-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 51px;
+}
+
+.review-excerpt {
+  font-family: "Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+}
+
+.review-rating {
+  display: flex;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  align-items: flex-end;
+  margin-top: 150px;
+}
+
+.review-rating-score {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 109px;
+  line-height: 100px;
+}
+
+.review-excerpt {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+}

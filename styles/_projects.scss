@@ -1,0 +1,36 @@
+.projects {
+  margin-bottom: 150px;
+  .section-title {
+    margin-bottom: 50px;
+  }
+
+  .project {
+    position: relative;
+    margin-bottom: 25px;
+
+    .project-image {
+      width: 100%;
+    }
+    .project-title {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      &.black {
+        color: black;
+      }
+    }
+  }
+}
+
+.project-1 {
+  max-height: 510px;
+  overflow: hidden;
+}
+.project-2 {
+  max-height: 510px;
+  overflow: hidden;
+}

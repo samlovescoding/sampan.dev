@@ -1,0 +1,55 @@
+.blog-must-reads {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  .section-title {
+    margin-bottom: 80px;
+  }
+  .col-md-4 > .custom-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .post {
+    width: 70%;
+    .post-image {
+      width: 100%;
+    }
+    .post-title {
+      margin-top: 10px;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+  .post-1 {
+    margin-right: auto;
+  }
+  .post-2 {
+    width: 90%;
+    .post-title {
+      font-size: 26px;
+    }
+  }
+  .post-3 {
+    margin-left: auto;
+  }
+}
+
+.blog {
+  .post-wrapper {
+    .post {
+      margin-bottom: 50px;
+      .post-title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .post-image {
+        width: 100%;
+      }
+    }
+  }
+}
