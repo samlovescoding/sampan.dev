@@ -1,0 +1,82 @@
+---
+title: Case Study - Coach
+subtitle: Case Study - Coach
+backdrop: null
+cover: /images/articles/covers/coach-dev.png
+category: Case Study
+readingTime: 10 min
+createdDate: March 13, 2022 18:30:00
+noHeader: true
+hidden: false
+seoDescription: Coach is an ecommerce fashion brand active primarily in USA and Canada. They have an ecommerce website and its actively in development since 2019. They have close to 60,000 products in their dashboard and are looking for a faster user experience on their website. They use Salesforce Commerce Cloud (SFCC) to power their website.
+---
+
+<div className="row">
+  <div className="col-md-5">![Coach Website Screenshot](/images/articles/images/coach-website.jpg)</div>
+  <div className="col-md-7">
+    Coach is an ecommerce fashion brand active primarily in USA and Canada. They have an ecommerce website and its
+    actively in development since 2019. They have close to 60,000 products in their dashboard and are looking for a
+    faster user experience on their website. They use Salesforce Commerce Cloud (SFCC) to power their website.
+
+    ## Problem
+
+    SFCC renders the pages on the cloud and can take easily upto 2-3 seconds per page. Let's assume a user navigates
+    10 pages. They are easily spending 30 seconds if not more waiting for the server to respond. We knew we could easily
+    mitigate this loading period by using React based routing and cache the SFCC API Routes as well. So we proposed our
+    solution.
+
+    ## Solution
+
+    We planned to use Next.js and we will handle the major UI pages that are home page, product listing page, product
+    details page and search page. We used Layer0 to deploy the website and used its cutting-edge caching to cache the
+    slow SFCC API calls and Next.js page renders as well. React on its own can't be used because of their requirements
+    like SEO and many integrations needed server side. Next.js made the perfect candidate in this scenario.
+
+    Instead of using Redux, we relied solely on React Context as we knew almost all the data would come from SFCC and
+    it doesn't make much sense to throw it into context in hopes we would use it in the future. Infact, not using redux,
+    made our development lives alot more easier too. Our fellow developers were well versed in agile development and it
+    made alot of sense here due to their requirements.
+
+    <a href="http://coach.com" target="_blank">Visit Live Website</a>
+
+    ## Development
+
+    I was working with a team of ~20 (MoovForge Employees) + 6 (Litmus7 Employees) that is ~26 people in total. The number did
+    fluctuate throughout the time I was their. I worked their for 6 months and my contract period with Tapestry, the parent
+    company of Coach expired on December 31st, 2021. Almost everything was normal and work was defined into epics which had
+    stories which had tasks and bugs related to them. Stories were the focal point throughout each sprint which were 2 weeks.
+    There was one tech lead and he was mostly responsible for merging our PRs which needed atleast 2 approvals to be merged.
+    The testing strategy for the project was interlinked between development and each story and task needed to be tested
+    before it ever got closed (completed). The main issue which I think I noticed was that there were too many re-opens.
+    I think almost all the tickets I worked on, got re-opened atleast once. However, this is more of a management issue
+    than something linked directly into the technical development.
+
+    Since, there were so many developers on the project, the _pressure_ on individuals was relatively low. I primarily worked
+    on these major tasks - Membership, SEO, Google Analytics and QA Automation. I had never worked on Google Analytics, but
+    since this project, I feel very confident in analytics now. We had a custom hook for handling analytics which was pretty
+    awesome. However, implementing them throughout the site takes a long time
+    For both Google Analytics and QA Automation, you will be refactoring all the UI components. Apart from the
+    major tasks, we always had a few UI bugs, that needed to fixed in CSS.
+
+    #### Tools Used
+
+    1. JIRA and Confluence
+    2. Zoom
+    3. GitHub
+    4. VS Code
+    5. Next 12 and React 17
+    6. Node 14
+    7. Chakra UI
+    8. React Hook Forms
+
+    #### What I Learned
+
+    1. SalesForce Commerce Cloud
+    2. Next.js
+    3. ChakraUI
+    4. Google Analytics (GTM)
+    5. QA Automation
+    6. SEO Optimization in Next.js
+
+  </div>
+</div>

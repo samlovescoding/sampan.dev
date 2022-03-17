@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  text-align: center;
 }
 .header-image-wrapper {
   position: absolute;
@@ -13,6 +14,7 @@
 }
 .header-image {
   width: 100%;
+  min-height: 100%;
 }
 .header-content {
   z-index: 90;
@@ -25,31 +27,56 @@
 .header-title {
   font-size: 120px;
   font-weight: bold;
+
+  @media (max-width: $media-md) {
+    font-size: 60px;
+  }
 }
 .header-subtitle {
   font-size: 45px;
   font-weight: bold;
+  @media (max-width: $media-md) {
+    font-size: 23px;
+  }
 }
 .header-social {
   display: flex;
   margin-top: 100px;
+  @media (max-width: $media-sm) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .header-social-icon {
+      width: 50%;
+    }
+  }
 }
-// .header-social-icon {
-// }
-// .header-social-icon-twitter {
-// }
-// .header-social-icon-github {
-// }
-// .header-social-icon-youtube {
-// }
-// .header-social-icon-behance {
-// }
-// .header-social-icon-discord {
-// }
 .header-fade {
   position: absolute;
   bottom: 0;
   height: 200px;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   width: 100%;
+}
+.header-article {
+  @media (max-width: $media-md) {
+    height: 30vh;
+  }
+  .header-title {
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    @media (max-width: $media-md) {
+      margin-top: 80px;
+      font-size: 30px;
+    }
+  }
+  .header-subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    @media (max-width: $media-md) {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
 }

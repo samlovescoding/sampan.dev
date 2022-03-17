@@ -1,0 +1,62 @@
+---
+title: Case Study - Procter and Gamble
+subtitle: Case Study - Procter and Gamble
+backdrop: null
+cover: /images/articles/covers/pg-dev.png
+category: Case Study
+readingTime: 15 min
+createdDate: March 17, 2022 18:30:00
+noHeader: true
+hidden: false
+seoDescription: P&G is a multinational consumer goods corporation. Apart from their massive line of products, they also have a massive list of software projects. Believe me, I have seen their 4.2k repository list on GitHub which they switched to in 2019. Most of these projects were web apps and APIs, so they were running into a unique problem. Documentation for these applications was bundled inside their repositories if not hosted on a different service. To streamline the whole process of software development, they were looking for a web app where we can browse their APIs, view their documentation and test out some APIs. The solution we proposed was a one stop developer’s portal for their services.
+---
+
+# Introduction
+
+P&G is a multinational consumer goods corporation. Apart from their massive line of products, they also have a massive list of software projects. Believe me, I have seen their 4.2k repository list on GitHub which they switched to in 2019. Most of these projects were web apps and APIs, so they were running into a unique problem. Documentation for these applications was bundled inside their repositories if not hosted on a different service. To streamline the whole process of software development, they were looking for a web app where we can browse their APIs, view their documentation and test out some APIs. The solution we proposed was a one stop developer’s portal for their services. To give an idea, we were looking at websites like Facebook Developers, Twitter Developers and Google Developers. This portal is protected under an authwall so cant share its link.
+
+# Designs
+
+![Brands / Domains - Category Listing Page](/images/articles/images/pg-clp.png)
+
+<div className="image-heading">Brands / Domains - Category Listing Page</div>
+
+![Products / APIs - Product Listing Page](/images/articles/images/pg-plp.png)
+
+<div className="image-heading">Products / APIs - Product Listing Page</div>
+
+![Product / API - Product Details Page - Guide View](/images/articles/images/pg-pdp-1.png)
+
+<div className="image-heading">Product / API - Product Details Page - Guide View</div>
+
+![Product / API - Product Details Page - Specifications View](/images/articles/images/pg-pdp-2.png)
+
+<div className="image-heading">Product / API - Product Details Page - Specifications View</div>
+
+# Development
+
+I was the development lead for the project. As per the requirements from P&G, they wanted more of a micro-services architecture. Truth be told, neither me nor the team had any experience with microservices and the timeline was hella tight. We decided to use Next.js for the UI service and MongoDB+Express.js+Typescript for Backend Services. Instead of having API discovery and due to P&G restrictions on how we can use APIs on their infrastructure, we decided that clients never really will interact with the Backend Services, atleast directly. There are several reasons why I personally think this is a good approach in this scenario-
+
+1. No service discovery system required.
+2. API services needs to go through the tedious approval processes in P&G.
+3. Next.js API Routes are very robust and can easily handle such an architecture.
+4. UI will lose its shine over the years. So instead of rebuilding the whole software, we just build a new UI service. Due to this, we are looking at the APIs independenty from UI. I know GraphQL would’ve been 1000x better choice but, wasn’t really me who decided MERN stack for services here.
+
+All things aside, I think this is an interesting approach towards building software. To me, it looks like the post-REST apocalyptic way of building software but still an interesting approach nonetheless. Apart from the architecture, we used JIRA, Zephyr, Confluence and Github for managing the project and Azure for deployment. I really like Azure but their UI is so unintuitive, looks better than AWS but feels kinda bad (btw its coming from a person with near 0 knowledge of AWS or Azure, so please discard my opinion here).
+
+Docker was one of my 2022 goals and I did learn Docker in Jan-Feb 2022. I would consider myself a Docker Noob and Enthusiast. I got to use Docker here, atleast for preplanning because someone not me decided Docker is not good. I mean microservices and docker go hand in hand and I think docker was made for these microservices in mind but again not really my decision here. I really love Docker wouldv’e loved to see it in use here.
+
+# Next.js + Microservice Approach
+
+The UI pages needed to be protected and so did the API calls to the backend infrastructure. For UI Pages, we decided to use getServerSideProps always to render the UI, while for API calls, instead of client’s browser calling the microservices, instead client’s browser will call the Next.js API Routes and there we can do Authentication, Authorization and mixing and mapping data for our UI service. That way, our microservices wont be having any calls between each other, and anywhere where the data needs to be interlinked (related data), the Next.js API Routes and getServerSideProps will handle them. So, all the actual backend calls to microservices will be proxied via API Routes and getServerSideProps. That is a pretty cool. And since we dont have Service Discovery, we can just use environment for manually writing service endpoints.
+
+# Conclusion
+
+I don’t think microservices was the right solution for this problem. It’s kind of like outsourcing different parts of a car to different companies and the companies dont know about each other nor care. So, the tires might be good, but engine of the car might be bad. I would consider this to be small-scale software project so there was no need for microservices anyways. MERN would have been better, Laravel even better and Next.js+GraphQL good too.
+
+# What I Learned
+
+1. Next.js
+2. Microservices Architecture
+3. Docker
+4. Project Management

@@ -6,6 +6,11 @@
   margin: 0 20px;
   min-height: 100px;
   min-width: 130px;
+  @media (max-width: $media-md) {
+    min-width: 50px;
+    margin: 0 00px;
+    transform: scale(0.8);
+  }
 }
 .blob-button .blob {
   position: absolute;
@@ -17,6 +22,9 @@
   position: relative;
   z-index: 10;
   transition: all 0.1s ease-in-out;
+  @media (max-width: $media-md) {
+    transform: scale(0.5) !important;
+  }
 }
 .blob-button:hover .blob {
   transform: scale(1.6) !important;

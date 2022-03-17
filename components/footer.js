@@ -16,7 +16,9 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section className="footer-copyright">samlovescoding™ 2022 © All rights reserved</section>
+      <section className="footer-copyright">
+        sampan.dev™ Sampan Verma™ samlovescoding™ 2022 © All rights reserved
+      </section>
     </footer>
   );
 }

@@ -11,7 +11,12 @@
     height: 100%;
   }
   .post {
-    width: 70%;
+    width: 80%;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+
     .post-image {
       width: 100%;
     }
@@ -23,17 +28,30 @@
       font-size: 20px;
     }
   }
-  .post-1 {
-    margin-right: auto;
-  }
-  .post-2 {
-    width: 90%;
-    .post-title {
-      font-size: 26px;
+  @media (max-width: $media-md) {
+    .post {
+      margin-bottom: 60px;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
-  .post-3 {
-    margin-left: auto;
+  @media (min-width: $media-md) {
+    .post {
+      width: 70%;
+    }
+    .post-1 {
+      margin-right: auto;
+    }
+    .post-2 {
+      width: 90%;
+      .post-title {
+        font-size: 26px;
+      }
+    }
+    .post-3 {
+      margin-left: auto;
+    }
   }
 }
 
@@ -41,6 +59,12 @@
   .post-wrapper {
     .post {
       margin-bottom: 50px;
+
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+
       .post-title {
         font-style: normal;
         font-weight: 300;

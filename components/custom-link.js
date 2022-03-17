@@ -4,16 +4,18 @@ const CustomLink = ({ href, children, showPointer = true, ...props }) => {
   const router = useRouter();
 
   return (
-    <div
+    <a
       className="custom-link"
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         router.push(href);
       }}
+      href={href}
       style={showPointer ? { cursor: "pointer" } : {}}
       {...props}
     >
       {children}
-    </div>
+    </a>
   );
 };
 

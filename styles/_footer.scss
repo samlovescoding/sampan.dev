@@ -27,6 +27,11 @@
   }
   &.contact-right {
     text-align: right;
+
+    @media (max-width: $media-sm) {
+      margin-top: 20px;
+      text-align: left;
+    }
   }
 }
 .footer-copyright {
@@ -38,4 +43,6 @@
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }

@@ -1,3 +1,5 @@
+import CustomLink from "components/custom-link";
+
 export default function Projects() {
   return (
     <section className="projects">
@@ -6,26 +8,36 @@ export default function Projects() {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <article className="project project-1">
-              <img className="project-image" src="/images/projects/coach_pwa.jpg" />
-              <h5 className="project-title black">Coach PWA</h5>
-            </article>
+            <CustomLink href="/articles/case-study-coach">
+              <article className="project project-1">
+                <div className="project-image-wrapper">
+                  <img className="project-image" src="/images/projects/coach_pwa.jpg" />
+                </div>
+                <h5 className="project-title black">Coach PWA</h5>
+              </article>
+            </CustomLink>
           </div>
           <div className="col-md-6">
-            <article className="project project-2">
-              <img className="project-image" src="/images/projects/pg_developers.jpg" />
-              <h5 className="project-title">P&G Developers Portal</h5>
-            </article>
+            <CustomLink href="/articles/case-study-pg-developers">
+              <article className="project project-2">
+                <div className="project-image-wrapper">
+                  <img className="project-image" src="/images/projects/pg_developers.jpg" />
+                </div>
+                <h5 className="project-title ">P&G Developers</h5>
+              </article>
+            </CustomLink>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-md-12">
-            <article className="project project-3">
-              <img className="project-image" src="/images/projects/purchasing_platform_pwa.jpg" />
-              <h5 className="project-title">Purchasing Platform PWA</h5>
-            </article>
+            <CustomLink href="/projects/purchasing-platform">
+              <article className="project project-3">
+                <img className="project-image" src="/images/projects/purchasing_platform_pwa.jpg" />
+                <h5 className="project-title">Purchasing Platform PWA</h5>
+              </article>
+            </CustomLink>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

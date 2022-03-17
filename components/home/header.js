@@ -3,8 +3,24 @@ import BlobDiscord from "components/blobs/discord";
 import BlobGithub from "components/blobs/github";
 import BlobTwitter from "components/blobs/twitter";
 import BlobYouTube from "components/blobs/youtube";
+import { useState, useEffect } from "react";
 
 export default function Header() {
+  const [headerImageOpacity, setHeaderImageOpacity] = useState(1);
+
+  useEffect(() => {
+    window.addEventListener("scroll", calculateHeaderImageOpacity);
+
+    return () => {
+      window.removeEventListener("scroll", calculateHeaderImageOpacity);
+    };
+  }, []);
+
+  function calculateHeaderImageOpacity() {
+    const opacity = 1 - window.scrollY / (window.innerHeight * 1.1);
+    setHeaderImageOpacity(opacity);
+  }
+
   return (
     <section className="header">
       <div className="header-content">
@@ -26,12 +42,12 @@ export default function Header() {
             <BlobBehance href="http://behance.net/infinityengine" duration="10s" />
           </div>
           <div className="header-social-icon header-social-icon-discord">
-            <BlobDiscord href="http://discord.com/" duration="10s" />
+            <BlobDiscord href="https://discordapp.com/users/252154038697721857" duration="10s" />
           </div>
         </div>
       </div>
       <div className="header-image-wrapper">
-        <img className="header-image" src="/images/background.jpg" />
+        <img className="header-image" src="/images/background.jpg" style={{ opacity: headerImageOpacity }} />
         <div className="header-fade"></div>
       </div>
     </section>

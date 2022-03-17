@@ -1,5 +1,11 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
 
+$media-xs: 575.98px;
+$media-sm: 767.98px;
+$media-md: 991.98px;
+$media-lg: 1199.98px;
+$media-xl: 1399.98px;
+
 @import "fonts";
 @import "navbar";
 @import "footer";
@@ -40,4 +46,12 @@ body {
 
 .navbar-compensator {
   height: 150px;
+  @media (max-width: $media-md) {
+    height: 90px;
+  }
+}
+
+a.custom-link {
+  color: inherit;
+  text-decoration: inherit;
 }
