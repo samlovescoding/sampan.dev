@@ -1,0 +1,177 @@
+---
+title: Project Estimation
+subtitle: Are you confused what to charge your client? Here is a definitive guide for small teams and projects.
+backdrop: null
+cover: /images/articles/covers/project-estimation.jpg
+category: Coding
+readingTime: 15 min
+createdDate: April 8, 2022 00:56:00
+noHeader: true
+hidden: false
+seoDescription: Are you confused what to charge your client? Here is a definitive guide for small teams and projects.
+---
+
+Most software developers are not taught how to estimate the cost of a project and most actually don't know how to charge clients for their work correctly either. I've seen so many developers undercharging clients and then regretting later on. But before you can actually estimate a price, there are alot of factors that you need to consider. This article will cover alot of project management and price estimation techniques that I use.
+
+First of all, what you need to consider is the actual skill level of your team. Be honest with yourself and the skill level does not need to be communicated with your clients. This is important for small teams like startups where people don't have an actual hands on experience in the industry. Then comes the rest - Scope, Budget, Timelines etc. I usually work in a group of 5-10 people and I dont really need to charge my clients by lines of code or hours. I prefer a fixed price project with a release deadline and project handover. The idea behind fixed price projects is that you are solely developing a product from finish to end, stabilizing and polishing it. If you are just a developer that is frontend or backend or equivalent then you might miss alot of important steps that should be included in your project scope. This approach has worked for me and my small team. I also wanted to include an interactive project estimator in this article to quickly estimate a small project.
+
+## Project Planning
+
+For effective estimation, your project plan needs to be rock solid. For that lets take a project into consideration and break it down into tasks and sub-tasks. I am taking an ecommerce website into my consideration. For me an effort is two hours. Ideally effort can be anything but in my experience <i>time/skill</i> is probably the best approach. Let's say a task should be completed in a day. That is usually 6 hours. And if I should place myself on a skill level I would humbly be at 50% skill level of all the developers in the world. So I will divide 6 by 0.5 and I get 12 as an effort. This has worked most of the time for me. A work day is 8 hours long but if we include lunch, breakfast, meetings and just general leakage, its better to assume it to be 4-6 hours instead i.e only 4-6 hours worth of work can be completed in any specific day. I use 1 effort point to be 2 hours and in a day I aim for 6 effort point completion. If its done, that's when I stop work to maintain a good work-life balance. Overdoing can complete projects earlier but will result in poor quality code and longer exhaustion recovery periods.
+
+<table className="table">
+  <thead>
+    <tr>
+      <td width="10">No.</td>
+      <td>Task</td>
+      <td>Effort</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Requirement Analysis</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Team Onboarding</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Infrastructure Setup</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Project Architecture</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Home Page</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Product Listing Page</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Product Display Page</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Category Listing Page</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Search Page</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Checkout Page</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Authentication Page</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Account Page</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Payment Provider Integration - Stripe</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Help Page</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Stabilization</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Critical and High Priority Bugs</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Release</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Medium Priority Bugs</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Performance Testing</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Quality Assurance</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Documentation</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Handover</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Total = 390</td>
+    </tr>
+  </tbody>
+</table>
+
+I have skipped out on so many features that are essential in an ecommerce website but I think it is enough for me to explain my methods. These are the major tasks. Now you have to split them even further into chunks that can be completed by developers. Ideally the chunks aka subtasks should also reflect the effort for the overall task. For this small ecommerce project 400 seems to be the correct effort that is needed. Splitting between 4 people would mean 100 effort points per person and ideally project only needs to be 100 effort points long in time which is 100 \* 2 = 200 hours. Great, right! Nope. To make the development smoother and the way we plan projects, you should define effort points linearly i.e. they are not supposed to be done parallely. Which means the timeline should be 400 effort points \* 2 hours = 800 hours. That is because all the tasks needs to be reviews by team mates and backend and frontend needs interlinking which might include two or even more people. So a linear timeline always is beneficial atleast that's how I present it to the clients and the project is almost always complete before deadlines and have enough time for testing, documentation etc. Now, you have a scope for this project. How long is this project going to take? That is also simple.
+
+## Project Length
+
+800 hours / 6 hour per day = 134 days
+
+134 days / 22 work days in a month = 7 months
+
+7 months for the tasks listed above is very much doable by a team of 4 people. Also I am assuming you wont be working Saturdays and Sundays which you shouldn't. Keeping this in mind it is very easy to make a timeline of 7 months which lists all the tasks which will be completed during that time period.
+
+## Project Cost
+
+So to break even with the time being spent, we need to define a price per hour. Lets go with the standard $200 per hour. That simply maps out to $160,000 with 800 hours split between 4 people which is $40,000 per person for 7 months. Ideally, companies charge $1000+ per hour rates because they have to generate a profit and afford HR department, office, equipment etc. One more thing you should include in the Project Cost is the equipment charge which should be paid upfront. That includes - 4 MacBook Pros ($2000 each), Development Cloud Server (to be paid by client) and any other software fees being used. For this project, I think $200,000 is more than fair enough and as per Indian rates, it is actually a genuine rate. The company I contract with charges a similar rate and does manage to generate a profit. Salaries of developers in India start from $10,000 per year to $50,000 per year and with these competitive salaries, projects even as small as $100,000 can generate a profit by assigning 5 developers with $10,000 and even giving them Macbook Pros, internet and other benefits and that too just for 7 months.
+
+This wont be true for all the companies and all the contracts either. Bigger companies usually pay more for more skilled developers. And truth be told, if the project is $1 million and if you are paying developers $10,000 per year and there are 10 developers on the project, that would mean that the developers are underskilled and will cause problems in the long run. In this case, having more experienced developers is the key to having better client satisfaction. Usually, the project and compensation to the employees always match up. In a way, the industry is saturated. However, some companies do not really respect this saturation and to earn more profits, hire underskilled people with lesser salaries, which is bad for the underskilled person, the client and the company's reputation itself. Truthfully, its not about doing work to make money, its all about loving the work and getting paid for the thing you love. I don't think I can ever work in a field I don't love.
+
+# And for crying out loud, Use JIRA! It does everything I said and then some.
+
+I am not sponsored by them, but if you can use JIRA, it does everything I mentioned in this article and solves nested tasks, testing, sprints, assigning it to people, reports. There are alternative too, and I would love to mention ClickUp and Asana. I love both of their UIs but JIRA feels like home at this time.
+
+<br />
+<br />
+<br />
+
+## Create your Quick Estimate
+
+<br />
+
+<ProjectEstimationEstimator />

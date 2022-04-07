@@ -65,4 +65,79 @@
     font-family: "Baskerville";
     font-size: 20px;
   }
+
+  .table {
+    width: 100%;
+    font-family: "Baskerville";
+    font-size: 24px;
+    border-collapse: collapse;
+
+    thead {
+      font-weight: bold;
+      font-family: "Gilroy";
+    }
+    td {
+      border: 1px solid white;
+      padding: 4px 20px;
+      &.borderless {
+        border-color: transparent;
+      }
+      &.center > * {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .btn-primary {
+    background: #5ca5cc;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: "Gilroy";
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btn-delete {
+    background: #cc5c89;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: "Gilroy";
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.form-label.sm {
+  font-size: 18px;
+}
+.form-label {
+  color: white;
+  font-size: 30px;
+}
+.form-control {
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  font-size: 30px;
+  color: white;
+  padding: 20px 40px;
+  font-family: "Gilroy";
+}
+
+.form-control.sm {
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Gilroy";
+}
+
+.article-project-estimation {
 }

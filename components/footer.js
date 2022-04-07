@@ -11,13 +11,15 @@ export default function Footer() {
             </div>
             <div className="col-md-6 contact contact-right">
               <h6 className="contact-type">Email Address</h6>
-              <h1 className="contact-information">hello@sampan.dev</h1>
+              <h1 className="contact-information">
+                himself@samlovescoding.com
+              </h1>
             </div>
           </div>
         </div>
       </section>
       <section className="footer-copyright">
-        sampan.dev™ Sampan Verma™ samlovescoding™ 2022 © All rights reserved
+        Sampan Verma™ samlovescoding™ 2022 © All rights reserved
       </section>
     </footer>
   );
