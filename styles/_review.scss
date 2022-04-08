@@ -10,7 +10,7 @@
 }
 
 .review-image-wrapper {
-  width: 50%;
+  min-width: 34%;
   @media (max-width: $media-md) {
     width: 70%;
   }
