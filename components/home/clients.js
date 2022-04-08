@@ -20,7 +20,11 @@ function Client({ image }) {
 
   return (
     <div className="col-md-3 col-sm-6">
-      <article ref={articleRef} className="client" style={{ height: articleHeight }}>
+      <article
+        ref={articleRef}
+        className="client"
+        style={{ height: articleHeight }}
+      >
         <img className="client-image" src={image} />
       </article>
     </div>
@@ -30,7 +34,7 @@ function Client({ image }) {
 export default function Clients() {
   return (
     <section className="clients">
-      <h1 className="section-title">I Worked With</h1>
+      <h1 className="section-title">My Clients</h1>
 
       <div className="container">
         <div className="row">

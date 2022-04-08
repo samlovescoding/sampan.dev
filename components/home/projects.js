@@ -3,7 +3,7 @@ import CustomLink from "components/custom-link";
 export default function Projects() {
   return (
     <section className="projects">
-      <h1 className="section-title">My Projects</h1>
+      <h1 className="section-title">My Work</h1>
 
       <div className="container">
         <div className="row">
@@ -11,7 +11,10 @@ export default function Projects() {
             <CustomLink href="/articles/case-study-coach">
               <article className="project project-1">
                 <div className="project-image-wrapper">
-                  <img className="project-image" src="/images/projects/coach_pwa.jpg" />
+                  <img
+                    className="project-image"
+                    src="/images/projects/coach_pwa.jpg"
+                  />
                 </div>
                 <h5 className="project-title black">Coach PWA</h5>
               </article>
@@ -21,7 +24,10 @@ export default function Projects() {
             <CustomLink href="/articles/case-study-pg-developers">
               <article className="project project-2">
                 <div className="project-image-wrapper">
-                  <img className="project-image" src="/images/projects/pg_developers.jpg" />
+                  <img
+                    className="project-image"
+                    src="/images/projects/pg_developers.jpg"
+                  />
                 </div>
                 <h5 className="project-title ">P&G Developers</h5>
               </article>
