@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
       </section>
       <section className="footer-copyright">
-        Sampan Verma™ samlovescoding™ 2022 © All rights reserved
+        samlovescoding™ 2022 © All rights reserved
       </section>
     </footer>
   );
